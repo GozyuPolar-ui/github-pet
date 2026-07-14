@@ -2,8 +2,11 @@ name: Update GitHub Pet
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # jalan tiap hari jam 00:00 UTC
-  workflow_dispatch:        # biar bisa di-trigger manual dari tab Actions
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-pet:
@@ -20,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate pet
+      - name: Update pet
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           GH_USERNAME: ${{ github.repository_owner }}

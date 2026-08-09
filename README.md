@@ -2,7 +2,7 @@
 
 Pet virtual yang hidup berdasarkan aktivitas coding di GitHub. Rajin commit, pet-nya sehat & seneng. Bolong beberapa hari, pet-nya lemes. Update otomatis tiap hari lewat GitHub Actions — gak ada campur tangan manual.
 
-![pet](assets/dog_Idle.png?t=1786150669)
+![pet](assets/dog_Idle.png?t=1786237232)
 
 ## Cara Kerja
 
